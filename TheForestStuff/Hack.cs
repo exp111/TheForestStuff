@@ -79,7 +79,7 @@ namespace TheForestStuff
 			GUI.DragWindow(new Rect(0, 0, _itemMenuRect.width, 20));
 
 			TheForest.Items.Item[] items = TheForest.Items.ItemDatabase.Items;
-			_itemScrollPosition = GUI.BeginScrollView(new Rect(20, 20, _itemMenuRect.width, _itemMenuRect.height), _itemScrollPosition, new Rect(0, 0, _itemMenuRect.width - 50, items.Length * 20));
+			_itemScrollPosition = GUI.BeginScrollView(new Rect(10, 10, _itemMenuRect.width, _itemMenuRect.height), _itemScrollPosition, new Rect(0, 0, _itemMenuRect.width - 20, items.Length * 20));
 			var y = 0;
 			foreach (TheForest.Items.Item item in items)
 			{
